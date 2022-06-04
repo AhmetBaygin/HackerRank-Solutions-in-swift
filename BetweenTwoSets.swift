@@ -1,6 +1,10 @@
+import UIKit
+
 func getTotalX(a: [Int], b: [Int]) -> Int {
     var firstArray = [Int]()
+    // firstarray for a array
     var lastArray = [Int]()
+    //lastArray for b array
     var sonuc = false
     var sonuc2 = false
     for i in 1...100{
@@ -18,6 +22,7 @@ func getTotalX(a: [Int], b: [Int]) -> Int {
         }
         
     }
+    //first I found 1-100 multiply a array
     for k in firstArray{
         for j in b{
             if j%k == 0{
@@ -33,6 +38,8 @@ func getTotalX(a: [Int], b: [Int]) -> Int {
         }
         
     }
+    //after I found b array multiply firstArray
+    //and last them count
     return lastArray.count
 
 }
